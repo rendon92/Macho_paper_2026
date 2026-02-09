@@ -20,9 +20,16 @@ This repository is organized into two main analytical pipelines:
 - **Methods**: Integration of transcriptomic and chromatin accessibility data using Seurat and Signac
 - **Output**: Joint embeddings, differentially accessible regions, motif enrichment, and coordinated gene-regulatory analyses
 
+### **Trajectory Inference Analysis**
+To model developmental dynamics, we performed RNA velocity and latent time inference on neural retina populations:
+- **Tool**: scVelo with dynamical modeling
+- **Input**: Spliced/unspliced counts from Velocyto
+- **Analysis**: Estimation of RNA velocities, latent time ordering, identification of velocity-informed genes
+- **Insights**: Revealed transcriptional flow from proliferative to committed states and early vs. late gene programs
+
 ### **Note on Gene Regulatory Network Inference**
 The gene regulatory network (GRN) inference presented in the manuscript was performed using **MatchaiRen**, a separate tool developed for this study. The MatchaiRen pipeline is available in its own repository:  
-🔗 **[MatchaiRen_v0.1](https://github.com/rendon92/MatchaiRen_v0.1)**
+ **[MatchaiRen_v0.1](https://github.com/rendon92/MatchaiRen_v0.1)**
 
 ## Quick Start
 
